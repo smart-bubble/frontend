@@ -1,0 +1,32 @@
+<ion-list class="settings">
+  <ion-list>
+    <ion-item>
+      <label for="domain">Domain+port:</label>
+      <ion-input
+        required
+        type="text"
+        name="domain"
+        [(ngModel)]="domain"
+      ></ion-input>
+    </ion-item>
+    <ion-item>
+      <label for="username">Username:</label>
+      <ion-input
+        required
+        type="text"
+        name="username"
+        [(ngModel)]="username"
+      ></ion-input>
+    </ion-item>
+    <ion-item>
+      <label for="password">Password:</label>
+      <ion-input
+        required
+        type="password"
+        name="password"
+        [(ngModel)]="password"
+      ></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="full" (click)="connect()">Connect</ion-button>
+</ion-list>

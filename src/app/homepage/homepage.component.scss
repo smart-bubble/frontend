@@ -1,0 +1,44 @@
+.homepage{
+    width: 100%;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+.device-list{
+    display: table;
+    margin: 0 auto;
+    width: 90%;
+}
+.device p, .device div{
+    display: block;
+}
+.device{
+    margin: 1.6%;
+    padding:20px;
+    width: 30%;
+    height: 100px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 35px;
+    color: white;
+    transition: all 1s linear;
+}
+.device-turnedOn{
+    background: #96eaff;
+    --background: #96eaff;
+    animation: color_on;
+    animation-duration: 0.5s;
+}
+.device-turnedOff{
+    background: #40717d;
+    --background: #40717d;
+    animation: color_off;
+    animation-duration: 0.5s;
+}
+@keyframes color_on {
+	from { background-color: #40717d; }
+	to { background-color: #96eaff; }
+}
+@keyframes color_off {
+	from { background-color: #96eaff; }
+	to { background-color: #40717d; }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "smart-bubble",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

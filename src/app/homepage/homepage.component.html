@@ -1,0 +1,19 @@
+<div class="homepage">
+  <div class="device-list">
+    <div
+      *ngFor="let device of devices; let i = index"
+      class="device"
+      (touchend)="holdDevice(device)"
+      (click)="clickDevice(device)"
+      [ngClass]="{
+        'device-turnedOn': device.on === true,
+        'device-turnedOff': device.on !== true
+      }"
+    >
+      <div *ngIf="device.type === 0">🔲</div>
+      <div *ngIf="device.type === 1">💡</div>
+      <div *ngIf="device.type === 2">📹</div>
+      <p>{{ device.name }}</p>
+    </div>
+  </div>
+</div>
